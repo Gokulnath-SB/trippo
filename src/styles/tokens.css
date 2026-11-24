@@ -1,0 +1,65 @@
+/* tripo.tech design tokens — single source of truth.
+   Palette from the project brand brief; scales are the house system used by all screens. */
+:root {
+  /* Colour */
+  --bg: #050806;
+  --bg-2: #0b100d;
+  --surface: #101813;
+  --surface-2: #16211a;
+  --surface-3: #1c2a21;
+  --emerald: #00c878;
+  --emerald-bright: #19e68c;
+  --emerald-soft: #75ddb0;
+  --text: #f4f7f5;
+  --text-muted: #a0ada5;
+  --text-dim: #93a59a;
+  --on-emerald: #04120b;
+  --border: rgba(117, 221, 176, 0.14);
+  --border-strong: rgba(117, 221, 176, 0.3);
+  --danger: #f2837d;
+  --warning: #f0c674;
+
+  /* Spacing scale — 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+  --s9: 96px;
+
+  /* Type scale — 12 / 14 / 16 / 18 / 24 / 32 / 48 / 64 */
+  --t1: 12px;
+  --t2: 14px;
+  --t3: 16px;
+  --t4: 18px;
+  --t5: 24px;
+  --t6: 32px;
+  --t7: 48px;
+  --t8: 64px;
+
+  /* Radius scale */
+  --r1: 8px;
+  --r2: 12px;
+  --r3: 16px;
+  --r4: 24px;
+  --r-pill: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.32);
+  --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.44);
+  --shadow-glow: 0 12px 36px rgba(0, 200, 120, 0.16);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --fast: 160ms;
+  --base: 240ms;
+  --slow: 600ms;
+
+  /* Layout */
+  --container: 1200px;
+  --content: 720px;
+  --nav-h: 72px;
+}

@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "route": "/budget/t_mwuarzhn_xuv8ml",
+      "dom": {
+        "path": "/budget/t_mwuarzhn_xuv8ml",
+        "mainText": "My trips / 3-day demo plan · Ooty BUDGET 3-day demo plan · Ooty Track planned and actual spend in INR. All amounts are entered by you — nothing here is a live price. Itinerary Map Demo mode: your budget saves in this browser. Sign in to keep it with an account. PLANNED BUDGET (INR) ₹8,000 Set when the trip was created RECORDED SPEND (INR) ₹0 0 expenses ESTIMATED (INR) ₹0 Marked as estimates REMAINING (INR) ₹8,000 Available for the rest of the trip Budget used ₹0 of ₹8,000 INR · 0% Actual spend ₹0 · Estimated spend ₹0. All figures in INR. Expenses Estimated and actual entries are tracked separately in the totals above. Add expense Save budget No expenses yet Add a transportation, stay, food or activity expense to see your budget breakdown. Add first expense Spend by category ₹0 TOTAL INR Transportation ₹0 Accommodation ₹0 Food ₹0 Activities ₹0 Shopping ₹0 Other ₹0 No recorded spend yet — add an expense to populate the chart.",
+        "h1": "3-day demo plan · Ooty",
+        "viteOverlay": false,
+        "bodyLength": 1512
+      },
+      "errors": {
+        "label": "/budget/t_mwuarzhn_xuv8ml",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "route": "/budget/nope",
+      "dom": {
+        "path": "/budget/nope",
+        "mainText": "Trip not found This trip isn't in your saved trips. Go back to your trips to choose another one. My trips",
+        "h1": "Trip not found",
+        "viteOverlay": false,
+        "bodyLength": 669
+      },
+      "errors": {
+        "label": "/budget/nope",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    }
+  ],
+  "tripPath": "/itinerary/t_mwuarzhn_xuv8ml"
+}

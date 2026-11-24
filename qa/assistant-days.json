@@ -1,0 +1,22 @@
+{
+  "timezone": {
+    "zone": "Asia/Calcutta",
+    "offset": -330,
+    "now": "Tue Nov 24 2026 11:41:09 GMT+0530 (India Standard Time)"
+  },
+  "prompt": "I want to travel from Chennai to Ooty for 3 days with a budget of ₹8,000.",
+  "preview": "DEMO GENERATED\nSave as trip\n\nDEMO / NEW PLAN ONLY — locally generated, not live AI. 3 days for 1 traveller in Ooty (Nature) with an indicative budget of ₹8000. All amounts are estimates; nothing is reserved or booked.\n\nDay 1 · 2026-11-24\nmorning Nilgiri Mountain Railway — Nature day 1\nafternoon Ooty Lake — Nature day 1\nevening Botanical Gardens — Nature day 1\nDay 2 · 2026-11-25\nmorning Botanical Gardens — Nature day 2\nafternoon Tea plantations — Nature day 2\nevening Doddabetta Peak — Nature day 2\nDay 3 · 2026-11-26\nmorning Doddabetta Peak — Nature day 3\nafternoon Nilgiri Mountain Railway — Nature day 3\nevening Ooty Lake — Nature day 3\n\nIndicative total: ₹8,000\n\nDEMO / NEW PLAN: built locally from Ooty's curated highlights — no live AI, availability or bookings.\nIndicative only: 3 ideal day(s), roughly ₹2600 per day. Verify all prices before booking.\nTrip length capped at 14 days for this demo. Adjust dates in the planner for your real trip.\nPrefer to start from the planner? ",
+  "dayHeadings": [
+    "Day 1 · 2026-11-24",
+    "Day 2 · 2026-11-25",
+    "Day 3 · 2026-11-26"
+  ],
+  "savedPath": "/itinerary/t_mwuaqnw3_94tuoc",
+  "itineraryHeading": "3-day demo plan · Ooty",
+  "itineraryMeta": [
+    "Ooty",
+    "2026-11-24 → 2026-11-26",
+    "9 activities"
+  ],
+  "dayCards": 3
+}

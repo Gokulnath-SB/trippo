@@ -1,0 +1,31 @@
+{
+  "modal": {
+    "triggerBox": {
+      "x": 323,
+      "y": 630.3125,
+      "w": 318,
+      "h": 44
+    },
+    "focusBeforeEscape": {
+      "hasModal": true,
+      "focusInModal": true,
+      "active": "Close dialog"
+    },
+    "afterEscape": {
+      "hasModal": false,
+      "active": "ui-btn ui-btn--danger ui-btn--sm trip-card__delete",
+      "isTrigger": true
+    },
+    "pass": true
+  },
+  "focusRing": {
+    "tabs": 12,
+    "style": {
+      "focused": true,
+      "focusVisible": true,
+      "outline": "2px solid rgb(25, 230, 140)",
+      "outlineOffset": "2px"
+    },
+    "pass": true
+  }
+}

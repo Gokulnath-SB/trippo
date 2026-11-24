@@ -1,0 +1,104 @@
+{
+  "routes": [
+    {
+      "path": "/profile",
+      "heads": [
+        "H1:Sign in to see your profile"
+      ],
+      "h1": 1,
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "errors": {
+        "label": "/profile",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "path": "/itinerary/nope",
+      "heads": [
+        "H1:Trip not found"
+      ],
+      "h1": 1,
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "errors": {
+        "label": "/itinerary/nope",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "path": "/budget/nope",
+      "heads": [
+        "H1:Trip not found"
+      ],
+      "h1": 1,
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "errors": {
+        "label": "/budget/nope",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "path": "/nonexistent",
+      "heads": [
+        "H1:This route is off the map"
+      ],
+      "h1": 1,
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "errors": {
+        "label": "/nonexistent",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "path": "/map",
+      "heads": [
+        "H1:Explore the map",
+        "H2:On this map",
+        "H2:Nearby destinations"
+      ],
+      "h1": 1,
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "errors": {
+        "label": "/map",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    }
+  ],
+  "introKeyboard": {
+    "scene": "3",
+    "focusBefore": {
+      "tag": "BUTTON",
+      "text": "Skip Intro"
+    },
+    "focusAfterTab": {
+      "tag": "BUTTON",
+      "text": "ENTER TRIPO"
+    },
+    "overlayGone": true
+  },
+  "http404": []
+}

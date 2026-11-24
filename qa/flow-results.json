@@ -1,0 +1,190 @@
+{
+  "email": "peter.qa.1795500612059@example.com",
+  "checks": [
+    {
+      "name": "landing search Ooty",
+      "ok": true,
+      "data": {
+        "url": "/explore?q=Ooty",
+        "titles": [
+          "Ooty"
+        ],
+        "count": "1 destination found"
+      },
+      "pass": true
+    },
+    {
+      "name": "explore Beaches filter",
+      "ok": true,
+      "allCount": 17,
+      "data": {
+        "titles": [
+          "Goa",
+          "Bali",
+          "Santorini"
+        ],
+        "chipPressed": [
+          "Beaches"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "explore clear filters",
+      "ok": true,
+      "count": 17,
+      "pass": true
+    },
+    {
+      "name": "wishlist heart add / remove",
+      "ok": true,
+      "pressed": "true",
+      "onList": {
+        "titles": [
+          "Ooty"
+        ],
+        "count": "1 destination saved"
+      },
+      "afterRemove": {
+        "titles": [],
+        "empty": true
+      },
+      "pass": true
+    },
+    {
+      "name": "auth register + profile",
+      "ok": true,
+      "email": "peter.qa.1795500612059@example.com",
+      "data": {
+        "path": "/profile",
+        "heading": "Profile",
+        "body": "Skip to main content\ntripo.tech\nHome\nExplore\nPlan a Trip\nMy Trips\nAI Assistant\nPeter\nPlan a trip\nYOUR SPACE\nProfile\n\nA quiet overview of what you have planned and saved.\n\nPQ\nPeter Qa\npeter.qa.1795500612059@example.com\nDemo account\nDISPLAY NAME\nPeter Qa\nEMAIL\npeter.qa.1795500612059@example.com\nTRIPS SAVED\n0\nEXPENSES LOGGED\n0\nTOTAL LOGGED SPEND (INR)\n₹0\n\nDemo mode: account data is stored in this browser only. No server-side account is created.\n\nLog out\nGo to\n\nEverything you have been working on lives in these sections.\n\nMy trips\n0\n→\nWishlist\n0\n→\nPlan a new trip\n→\nTravel map\n→\n\nBudgets are estima"
+      },
+      "pass": true
+    },
+    {
+      "name": "auth logout + login",
+      "ok": true,
+      "signedOut": true,
+      "signedIn": true,
+      "pass": true
+    },
+    {
+      "name": "create trip 3 steps + save",
+      "ok": true,
+      "url": "/itinerary/t_mwuapk42_e77vlt",
+      "tripId": "t_mwuapk42_e77vlt",
+      "review": true,
+      "listed": true,
+      "pass": true
+    },
+    {
+      "name": "itinerary add / move / edit / remove / save / reload",
+      "ok": true,
+      "before": [
+        "Tea gardens",
+        "Botanical garden"
+      ],
+      "afterMove": [
+        "Botanical garden",
+        "Tea gardens"
+      ],
+      "afterEditRemove": [
+        "Tea gardens edited"
+      ],
+      "savedMsg": "Itinerary saved.",
+      "reloaded": [
+        "Tea gardens edited"
+      ],
+      "pass": true
+    },
+    {
+      "name": "budget add / edit / delete / totals / reload",
+      "ok": true,
+      "initial": [
+        "PLANNED BUDGET (INR) ₹25,000 Set when the trip was created",
+        "RECORDED SPEND (INR) ₹0 0 expenses",
+        "ESTIMATED (INR) ₹0 Marked as estimates",
+        "REMAINING (INR) ₹25,000 Available for the rest of the trip"
+      ],
+      "afterAdd": [
+        "PLANNED BUDGET (INR) ₹25,000 Set when the trip was created",
+        "RECORDED SPEND (INR) ₹1,500 1 expense",
+        "ESTIMATED (INR) ₹1,500 Marked as estimates",
+        "REMAINING (INR) ₹23,500 Available for the rest of the trip"
+      ],
+      "afterEdit": [
+        "PLANNED BUDGET (INR) ₹25,000 Set when the trip was created",
+        "RECORDED SPEND (INR) ₹2,000 1 expense",
+        "ESTIMATED (INR) ₹0 Marked as estimates",
+        "REMAINING (INR) ₹23,000 Available for the rest of the trip"
+      ],
+      "afterReload": [
+        "PLANNED BUDGET (INR) ₹25,000 Set when the trip was created",
+        "RECORDED SPEND (INR) ₹2,000 1 expense",
+        "ESTIMATED (INR) ₹0 Marked as estimates",
+        "REMAINING (INR) ₹23,000 Available for the rest of the trip"
+      ],
+      "titlesAfterReload": [
+        "Train tickets"
+      ],
+      "afterDelete": [
+        "PLANNED BUDGET (INR) ₹25,000 Set when the trip was created",
+        "RECORDED SPEND (INR) ₹0 0 expenses",
+        "ESTIMATED (INR) ₹0 Marked as estimates",
+        "REMAINING (INR) ₹25,000 Available for the rest of the trip"
+      ],
+      "afterDeleteReload": [
+        "PLANNED BUDGET (INR) ₹25,000 Set when the trip was created",
+        "RECORDED SPEND (INR) ₹0 0 expenses",
+        "ESTIMATED (INR) ₹0 Marked as estimates",
+        "REMAINING (INR) ₹25,000 Available for the rest of the trip"
+      ],
+      "pass": true
+    },
+    {
+      "name": "assistant sample prompt -> demo plan -> save as trip",
+      "ok": true,
+      "prompt": "I want to travel from Chennai to Ooty for 3 days with a budget of ₹8,000.",
+      "preview": "DEMO GENERATED\nSave as trip\n\nDEMO / NEW PLAN ONLY — locally generated, not live AI. 3 days for 1 traveller in Ooty (Nature) with an indicative budget of ₹8000. All amounts are estimates; nothing is reserved or booked.\n\nDay 1 · 2026-11-24\nmo",
+      "demo": true,
+      "url": "/itinerary/t_mwuaptzk_y2fdzb",
+      "heading": "3-day demo plan · Ooty",
+      "pass": true
+    },
+    {
+      "name": "map tiles + markers + overflow",
+      "ok": true,
+      "tiles": 2,
+      "data": {
+        "markers": 1,
+        "tiles": 20,
+        "scrollWidth": 1430,
+        "clientWidth": 1430
+      },
+      "bareMarkers": 3,
+      "pass": true
+    },
+    {
+      "name": "keyboard modal escape + focus return",
+      "ok": true,
+      "opened": {
+        "hasModal": true,
+        "focusInModal": true
+      },
+      "closed": {
+        "hasModal": false,
+        "focusClass": "",
+        "focusLabel": null
+      },
+      "pass": false
+    },
+    {
+      "name": "form focus ring computed",
+      "ok": false,
+      "error": "Timed out waiting for #auth-email at http://localhost:5180/auth"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": []
+}

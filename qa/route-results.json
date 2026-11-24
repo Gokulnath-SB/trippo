@@ -1,0 +1,252 @@
+{
+  "routes": [
+    {
+      "h1": "Your Journey.Your World. Your Way.",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip EXPLORE BEYOND · TRAVEL SMARTER Your Journey. Your World. Your ",
+      "url": "/",
+      "expected": "Your Journey",
+      "h1Match": true,
+      "errors": {
+        "label": "/",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Find your next place",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip EXPLORE Find your next place Browse a curated catalogue of rea",
+      "url": "/explore",
+      "expected": "Find your next place",
+      "h1Match": true,
+      "errors": {
+        "label": "/explore",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Ooty",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip Explore / Ooty Mountains Ooty Ooty, Tamil Nadu, India About O",
+      "url": "/destinations/ooty",
+      "expected": "Ooty",
+      "h1Match": true,
+      "errors": {
+        "label": "/destinations/ooty",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Create a trip",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip TRIP BUILDER Create a trip Three short steps. Your answers sta",
+      "url": "/create-trip",
+      "expected": "Create a trip",
+      "h1Match": true,
+      "errors": {
+        "label": "/create-trip",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "My Trips",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip YOUR COLLECTION My Trips Every plan you have saved, in one pla",
+      "url": "/my-trips",
+      "expected": "My Trips",
+      "h1Match": true,
+      "errors": {
+        "label": "/my-trips",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Wishlist",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip SAVED FOR LATER Wishlist Places you want to remember. Save a d",
+      "url": "/wishlist",
+      "expected": "Wishlist",
+      "h1Match": true,
+      "errors": {
+        "label": "/wishlist",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "AI Travel Assistant",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip DEMO MODE · CLEARLY LABELLED AI Travel Assistant Describe a tr",
+      "url": "/assistant",
+      "expected": "AI Travel Assistant",
+      "h1Match": true,
+      "errors": {
+        "label": "/assistant",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Sign in to see your profile",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip Sign in to see your profile Your saved trips and wishlist stay",
+      "url": "/profile",
+      "expected": "Sign in to see your profile",
+      "h1Match": true,
+      "errors": {
+        "label": "/profile",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Welcome back.",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip WELCOME TO TRIPO.TECH Welcome back. Sign in to keep your plans",
+      "url": "/auth",
+      "expected": "Welcome back.",
+      "h1Match": true,
+      "errors": {
+        "label": "/auth",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Explore the map",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip TRAVEL MAP Explore the map OpenStreetMap tiles, no API key req",
+      "url": "/map",
+      "expected": "Explore the map",
+      "h1Match": true,
+      "errors": {
+        "label": "/map",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Trip not found",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip Trip not found This trip isn't in your saved trips. Go back to",
+      "url": "/itinerary/nope",
+      "expected": "Trip not found",
+      "h1Match": true,
+      "errors": {
+        "label": "/itinerary/nope",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "Trip not found",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip Trip not found This trip isn't in your saved trips. Go back to",
+      "url": "/budget/nope",
+      "expected": "Trip not found",
+      "h1Match": true,
+      "errors": {
+        "label": "/budget/nope",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    },
+    {
+      "h1": "This route is off the map",
+      "viteOverlay": false,
+      "intro": false,
+      "scrollWidth": 1430,
+      "clientWidth": 1430,
+      "bodyText": "Skip to main content tripo.tech Home Explore Plan a Trip My Trips AI Assistant Login Plan a trip This route is off the map The page you were looking for does n",
+      "url": "/nonexistent",
+      "expected": "This route is off the map",
+      "h1Match": true,
+      "errors": {
+        "label": "/nonexistent",
+        "consoleErrors": [],
+        "pageErrors": [],
+        "networkFailures": []
+      }
+    }
+  ],
+  "intro": {
+    "freshVisible": true,
+    "scene": "0",
+    "sessionKeyBefore": null,
+    "initialFocus": "Skip Intro",
+    "focusAfterTab": "Skip Intro",
+    "afterSkipVisible": false,
+    "sessionKeyAfter": "1",
+    "errors": {
+      "label": "intro",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "networkFailures": []
+    },
+    "replayAfterReload": false,
+    "sessionKeyAfterReload": "1",
+    "secondPageVisible": true,
+    "afterEnterVisible": false,
+    "afterEnterKey": "1",
+    "enterErrors": {
+      "label": "intro-enter",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "networkFailures": []
+    }
+  },
+  "consoleErrors": []
+}

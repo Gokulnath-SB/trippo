@@ -1,0 +1,377 @@
+/* Cinematic intro — token-only palette, spacing, type and motion. */
+
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* --- Ambient awakening ------------------------------------------------- */
+.intro__ambient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.intro__glow {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(
+    circle at 50% 48%,
+    rgba(0, 200, 120, 0.11) 0%,
+    rgba(0, 200, 120, 0.03) 30%,
+    transparent 62%
+  );
+  animation: intro-breathe 5s ease-in-out infinite alternate;
+  transition: opacity var(--base) var(--ease), visibility var(--base) var(--ease);
+}
+
+.intro__particles {
+  position: absolute;
+  inset: 0;
+  transition: opacity var(--base) var(--ease), visibility var(--base) var(--ease);
+}
+
+.intro__particle {
+  position: absolute;
+  left: var(--px);
+  top: var(--py);
+  width: var(--ps);
+  height: var(--ps);
+  border-radius: var(--r-pill);
+  background: var(--emerald-soft);
+  opacity: 0;
+  animation: intro-drift var(--pd) var(--ease) var(--pdelay) infinite;
+}
+
+.intro[data-scene='2'] .intro__glow,
+.intro[data-scene='3'] .intro__glow,
+.intro[data-scene='2'] .intro__particles,
+.intro[data-scene='3'] .intro__particles {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.intro[data-scene='2'] .intro__particle,
+.intro[data-scene='3'] .intro__particle {
+  animation-play-state: paused;
+}
+
+@keyframes intro-breathe {
+  from { opacity: 0.55; }
+  to { opacity: 1; }
+}
+
+@keyframes intro-drift {
+  0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  40% { opacity: 0.55; }
+  100% { opacity: 0; transform: translate3d(0, -48px, 0); }
+}
+
+/* --- Scene stage ------------------------------------------------------- */
+.intro__stage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.intro__scene {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--s8) var(--s5) var(--s7);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--base) var(--ease), visibility var(--base) var(--ease);
+}
+
+.intro__scene[data-active='true'] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.intro__scene[data-active='false'] *,
+.intro__scene[data-active='false'] *::before,
+.intro__scene[data-active='false'] *::after {
+  animation-play-state: paused !important;
+}
+
+.intro__scene-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s4);
+  width: 100%;
+  max-width: var(--content);
+  text-align: center;
+}
+
+/* Scene 1 — awakening */
+.intro__awaken-mark {
+  display: grid;
+  place-items: center;
+  width: var(--s7);
+  height: var(--s7);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r3);
+  color: var(--emerald);
+  animation: intro-mark-in 900ms var(--ease) both;
+}
+
+.intro__awaken-text {
+  font-size: clamp(var(--t3), 2.6vw, var(--t5));
+  letter-spacing: -0.02em;
+  color: var(--text-muted);
+  animation: intro-rise 700ms var(--ease) 200ms both;
+}
+
+.intro__awaken-line {
+  width: var(--s8);
+  height: 1px;
+  background: var(--border-strong);
+  animation: intro-rise 700ms var(--ease) 350ms both;
+}
+
+/* Scene 2 — brand */
+.intro__mark {
+  display: grid;
+  place-items: center;
+  width: var(--s6);
+  height: var(--s6);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r2);
+  background: rgba(0, 200, 120, 0.1);
+  color: var(--emerald);
+  animation: intro-mark-in 700ms var(--ease) both;
+}
+
+.intro__wordmark-clip {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.intro__wordmark {
+  margin: 0;
+  font-family: 'Manrope', 'DM Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(var(--t6), 9vw, var(--t8));
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+  color: var(--text);
+  animation: intro-rise 900ms var(--ease) 100ms both;
+}
+
+.intro__wordmark span { color: var(--emerald-bright); }
+
+.intro__sweep {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 60%;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 0%, rgba(117, 221, 176, 0.22) 50%, transparent 100%);
+  transform: translateX(-140%);
+  animation: intro-sweep 1300ms var(--ease) 450ms 1 both;
+}
+
+.intro__sub {
+  font-size: var(--t2);
+  color: var(--text-muted);
+  animation: intro-rise 700ms var(--ease) 500ms both;
+}
+
+/* Scene 3 — landscape */
+.intro__landscape {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--surface-2), var(--bg-2));
+}
+
+.intro__landscape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: 55% 55%;
+  animation: intro-zoom 6500ms linear both;
+}
+
+.intro__landscape-veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 8, 6, 0.3) 0%,
+    rgba(5, 8, 6, 0.04) 42%,
+    var(--bg) 100%
+  );
+}
+
+.intro__scene-inner--copy { gap: var(--s3); }
+
+.intro__eyebrow {
+  color: var(--emerald-soft);
+  font-size: var(--t1);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.intro__landscape-title {
+  font-size: clamp(var(--t5), 4.5vw, var(--t7));
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  animation: intro-rise 800ms var(--ease) 200ms both;
+}
+
+@keyframes intro-zoom {
+  from { transform: scale(1.06) translate3d(0, 1.5%, 0); }
+  to { transform: scale(1.16) translate3d(0, -1.5%, 0); }
+}
+
+/* Scene 4 — enter */
+.intro__final { gap: var(--s5); }
+
+.intro__tagline {
+  margin: 0;
+  font-size: clamp(var(--t5), 6.2vw, var(--t8));
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  animation: intro-rise 800ms var(--ease) both;
+}
+
+.intro__tagline span { color: var(--emerald-soft); }
+
+.intro__final-sub {
+  font-size: var(--t3);
+  color: var(--text-muted);
+  animation: intro-rise 700ms var(--ease) 200ms both;
+}
+
+.intro__enter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s3);
+  min-height: var(--s7);
+  margin-top: var(--s2);
+  padding: 0 var(--s6);
+  border: 1px solid var(--emerald);
+  border-radius: var(--r-pill);
+  background: var(--emerald);
+  color: var(--bg);
+  font-size: var(--t2);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  box-shadow: var(--shadow-glow);
+  animation: intro-enter-in 520ms var(--ease) 350ms both;
+  transition: background var(--fast) var(--ease), transform var(--fast) var(--ease),
+              box-shadow var(--fast) var(--ease);
+}
+
+.intro__enter:hover {
+  background: var(--emerald-bright);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.intro__enter:active { transform: translateY(0); }
+
+/* --- Persistent controls ------------------------------------------------ */
+.intro__skip {
+  position: absolute;
+  top: var(--s5);
+  right: var(--s5);
+  z-index: 4;
+  min-height: calc(var(--s6) + var(--s3));
+  padding: 0 var(--s4);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--t1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  transition: color var(--fast) var(--ease), border-color var(--fast) var(--ease),
+              background var(--fast) var(--ease);
+}
+
+.intro__skip:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+
+.intro__progress {
+  position: absolute;
+  bottom: var(--s5);
+  left: 50%;
+  z-index: 4;
+  display: flex;
+  gap: var(--s2);
+  transform: translateX(-50%);
+}
+
+.intro__dot {
+  width: var(--s2);
+  height: var(--s2);
+  border-radius: var(--r-pill);
+  background: var(--surface-3);
+  transition: background var(--base) var(--ease), transform var(--base) var(--ease);
+}
+
+.intro__dot[data-on='true'] {
+  background: var(--emerald);
+  transform: scaleX(1.8);
+}
+
+/* --- Shared keyframes --------------------------------------------------- */
+@keyframes intro-mark-in {
+  from { opacity: 0; transform: scale(0.82) rotate(-10deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes intro-rise {
+  from { opacity: 0; transform: translate3d(0, 14px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes intro-enter-in {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes intro-sweep {
+  from { transform: translateX(-140%); }
+  to { transform: translateX(280%); }
+}
+
+/* --- Responsive --------------------------------------------------------- */
+@media (max-width: 640px) {
+  .intro__scene { padding: var(--s7) var(--s4) var(--s6); }
+  .intro__skip { top: var(--s4); right: var(--s4); }
+  .intro__progress { bottom: var(--s4); }
+  .intro__enter { padding: 0 var(--s5); letter-spacing: 0.06em; }
+  .intro__tagline { font-size: clamp(var(--t5), 8vw, var(--t6)); }
+  .intro__wordmark { font-size: clamp(var(--t6), 9vw, var(--t7)); }
+}
+
+/* --- Reduced motion: static, immediate ENTER scene ---------------------- */
+.intro[data-reduced='true'] *,
+.intro[data-reduced='true'] *::before,
+.intro[data-reduced='true'] *::after {
+  animation: none !important;
+  transition: none !important;
+}

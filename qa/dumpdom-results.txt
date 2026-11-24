@@ -1,0 +1,13 @@
+/ | exit=0 | h1=1 | overlay=False | heads=H1:Your Journey.Your World. Your Way. ; H2:Destinations worth the detour ; H3:Ooty
+/explore | exit=0 | h1=1 | overlay=False | heads=H1:Find your next place ; H2:Filter destinations ; H2:Results
+/destinations/ooty | exit=0 | h1=1 | overlay=False | heads=H1:Ooty ; H2:About Ooty ; H3:Highlights
+/create-trip | exit=0 | h1=1 | overlay=False | heads=H1:Create a trip ; H2:Basics ; H3:What happens next
+/my-trips | exit=0 | h1=1 | overlay=False | heads=H1:My Trips ; H3:No trips saved yet
+/wishlist | exit=0 | h1=1 | overlay=False | heads=H1:Wishlist ; H3:Your wishlist is empty
+/assistant | exit=0 | h1=1 | overlay=False | heads=H1:AI Travel Assistant ; H3:Try a prompt ; H3:How this works
+/profile | exit=0 | h1=0 | overlay=False | heads=H3:Sign in to see your profile
+/auth | exit=0 | h1=1 | overlay=False | heads=H1:Welcome back.
+/map | exit=0 | h1=1 | overlay=False | heads=H1:Explore the map ; H2:Nearby destinations
+/itinerary/nope | exit=0 | h1=0 | overlay=False | heads=H3:Trip not found
+/budget/nope | exit=0 | h1=0 | overlay=False | heads=H3:Trip not found
+/nonexistent | exit=0 | h1=0 | overlay=False | heads=H3:This route is off the map
